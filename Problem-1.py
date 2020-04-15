@@ -1,6 +1,13 @@
-from math_stuff.randomfactory import rand_range
 import pandas as pd
 from matplotlib import pyplot as plt
+
+import numpy as np
+np.random.seed()
+
+def rand_range(r1,r2):
+    return np.random.randint(r1,r2)
+def pick(l):
+    return np.random.choice(l)
 
 def dice_roller(start,throws):
     steps = []
